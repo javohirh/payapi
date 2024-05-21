@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #edf3f8;
+  font-family: public sans;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: dm serif;
+  src: url(../DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: public sans;
+  src: url(../Public_Sans/static/PublicSans-Regular.ttf);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+.logo a {
+  color: #36536b70;
+}
+.logo a:hover {
+  color: #36536b;
+}
+button {
+  padding: 16px 24px;
+  border-radius: 24px;
+  border: none;
+  font-weight: 700;
+  font-family: public sans;
+  color: #fff;
+  background-color: #ba4270;
+  box-shadow: 10px 10px 25px -10px #36536b40;
+
+  transition: 0.5s;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #da6d97;
+}
+.navbar {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+.navbar ul {
+  display: flex;
+  gap: 40px;
+}
+.contact-bitmap {
+  position: absolute;
+  right: -16%;
+  top: 0;
+  z-index: -1;
+}
+h1 {
+  margin: 96px 0 72px;
+  max-width: 730px;
+  font-family: dm serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  color: #36536b;
+}
+.price-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.price-card {
+  max-width: 350px;
+  padding: 3px;
+}
+.price-card h3 {
+  font-family: dm serif;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 32px;
+  color: #ba4270;
+  margin: 16px;
+}
+.price-card p {
+  font-size: 15px;
+  color: #6c8294;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+.price-card h2 {
+  border-bottom: 1px solid #36536b25;
+  padding-bottom: 24px;
+  font-family: dm serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  color: #36536b;
+}
+.price-card ul {
+  margin-top: 24px;
+
+  border-bottom: 1px solid #36536b25;
+  padding-bottom: 24px;
+}
+.price-card li {
+  line-height: 30px;
+
+  color: #36536b;
+}
+span {
+  padding-right: 24px;
+  color: #ba4270;
+  font-size: 20px;
+}
+.free-plan li:nth-child(4),
+.free-plan li:nth-child(5),
+.free-plan li:nth-child(6),
+.free-plan li:nth-child(7) {
+  color: #36536b50;
+  padding-left: 39px;
+}
+
+.basic-plan li:nth-child(6),
+.basic-plan li:nth-child(7) {
+  color: #36536b50;
+  padding-left: 39px;
+}
+.hero-btn {
+  /* padding: 16px 45px; */
+  margin: 24px 0 94px;
+  background-color: transparent;
+  border: 1px solid #36536b;
+  color: #36536b;
+}
+.hero-btn:hover {
+  background-color: #36536b;
+  color: #fbfcfe;
+}
+.ready {
+  margin-bottom: 80px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.end-int {
+  margin-bottom: 0;
+}
+.end-form {
+  transform: translateX(30px);
+}
+.end-form input {
+  width: 300px;
+  padding: 14px 27px;
+  border: none;
+  border-radius: 24px;
+  font-family: public sans;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  background-color: #fff;
+  outline: none;
+  margin-bottom: 16px;
+  box-shadow: 10px 10px 25px -10px #36536b40;
+}
+.end-form input::placeholder {
+  color: #36536b50;
+}
+
+.end-form input:focus {
+  cursor: pointer;
+  color: #36536b;
+}
+.footer-btn {
+  transform: translateX(-40px);
+}
+.ready h2 {
+  max-width: 445px;
+  font-family: dm serif;
+  font-size: 48px;
+  line-height: 56px;
+  color: #36536b;
+}
+footer {
+  height: 105px;
+  background-color: #1b262f;
+}
+.footer {
+  position: relative;
+  height: 100px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+.footer-list ul {
+  display: flex;
+  gap: 40px;
+}
+.footer-list a {
+  font-family: public sans;
+  font-weight: 700;
+  color: #fbfcfe70;
+}
+.footer-list a:hover {
+  color: #fbfcfe;
+}
+.footer-svg {
+  display: flex;
+  gap: 24px;
+  position: relative;
+  z-index: 55;
+}
+.footer-svg path:hover {
+  fill: #da6d97;
+  transition: 0.5s;
+}
+.footer-bitmap {
+  position: absolute;
+  top: 0;
+  right: -12%;
+}
